@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encargos</title>  
+    <title>Encargos de cuadros a pedido de Berliner Arq & Art</title>
+    <meta name="description" content="Aquí podras encargar cuadros de Arte y Arquitectura para tu hogar/empresa/espacio">
+    <meta name="keywords" content="Encargos, Lucia Berliner, cuadros de arte, cuadros de diseño, arquitectura">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="shortcut icon" href="../images/flavicon.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Raleway:wght@100&family=Roboto+Condensed:wght@300;400&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;1,200;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Raleway:wght@100;200&family=Roboto+Condensed:wght@300;400&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;1,200;1,400;1,600&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -63,20 +65,20 @@
                   <option value="abstracto">Abstracto</option>
                   <option value="figurativo">Figurativo</option>
                 </select></label>
-             
-                
-             <label class="calculo__label">
-             <input  class="calculo" type="submit" value="Calcular" id="resultado">
-            </label>
-             <h3 class="precio_final">Precio aproximado: </h3>
             </div>
+                
+            <div class="submit__container">
+             <input  class="submit__azul" type="submit" value="Calcular" id="resultado">
+            </div>
+             <h3 class="precio_final">Precio aproximado: </h3>
+          
            </form>
          
          </div>
 
-         <hr>
+         
          <div class="encargos_container">
-            <h1 class="encargos_title">Completá tus datos de contato</h1>
+            <h1 class="encargos_title">Completá tus datos de contacto</h1>
             <p class="encargos_paragraph">Te aconsejamos que leas previamente las aclaraciones de compra y envío, abajo mencionadas</p>
     
             <form action="./carrito.html" class="encargos_form" method="post" enctype="multipart/form-data">
@@ -95,12 +97,12 @@
                 <input type="text" class="encargos_form_input" placeholder="Código Postal:" name="cp">
                 <textarea class="encargos_form_input encargos_form_input_mensaje" placeholder="Indicá con lujo de detalles como quisieras que quede tu cuadro (colores, agregados, etc)"name="message"required></textarea>
                 <p class="encargos_dibujo"> Agregá un dibujo/foto/boceto que ayude a entender tu idea</p> <input type="file" name="archivo" class="form_file">
-                <input class="encargos_confirmar" type="submit" value="Realizar pedido">
+                <input class="submit__azul" type="submit" value="Realizar pedido">
             </div>
            </form>
         </div>
         
-        <hr>
+      
     
          
         <div class="aclaraciones_container">

@@ -1,0 +1,73 @@
+/* --------------VARIABLES -----------------------------------*/
+
+
+$ancho_full: 100%;
+$ancho_half: 50%;
+$primary_color: white;
+$secondary_color: rgb(202, 202, 202);
+
+
+
+/* --------------MAP GET ---------------------------------------*/
+
+$glassformismo: (
+    background: rgba(212, 211, 211, 0.5),
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ),
+    backdrop-filter: blur( 4px ),
+    border-radius: 10px,
+    border: 1px solid rgba( 255, 255, 255, 0.18 ),
+);
+
+
+/* -------------------- MIXIN ---------------------------------*/
+
+@mixin grid-center {
+    display: grid;
+    align-items: center;
+}
+
+@mixin block-query {
+    display: block;
+}
+
+/* ----------- CONDICIONALES ------------------------*/
+
+$temporada:verano;
+$verano:  #080808;
+$primavera: white;
+$invierno: grey;
+
+body {
+@if $temporada == verano {
+	
+		.tipos__container {background-color:$verano;}
+		
+	} 
+    @else if $temporada == primavera {
+		
+			.tipos__container{background-color: $primavera;}
+		
+	} 
+    @else {
+		.tipos__container{background-color: $invierno;}
+	}
+
+}
+
+
+
+/* --------------------- ANIMACIONES -----------------------------*/
+
+@keyframes efecto_logo {
+    0%{ border-radius: none;
+        margin: 5px 0  5px 350px; }
+   
+    50%{ border-radius: 25px;
+        margin: 5px 0  5px 205px; 
+    transform: rotateZ(-360deg);}
+    
+    100%{ border-radius: 50px;
+        margin: 5px 0  5px 30px; 
+        }
+ }
+ 
